@@ -1,2 +1,3 @@
-com\nttdata\CucumberTestSuite.class
 com\nttdata\freetogame\ValidarStatusOkStepsDefs.class
+com\nttdata\freetogame\ValidarStatusOk.class
+com\nttdata\CucumberTestSuite.class

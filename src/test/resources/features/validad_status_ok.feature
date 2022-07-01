@@ -12,6 +12,5 @@ Feature: Validar Status en Free To Game
 
   @test2
   Scenario: Validar Status 404
-    Given estoy en la página de FreeToGame
     When consulto mediante los parámetros platform <platform>, category <otro>
     Then el código de error debe ser <statusCode>

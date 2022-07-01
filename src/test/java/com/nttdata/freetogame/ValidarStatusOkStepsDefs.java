@@ -37,13 +37,4 @@ public class ValidarStatusOkStepsDefs {
 
     }
 
-    @When("consulto mediante los parámetros platform <platform>, category <otro>")
-    public void consultoMedianteLosParámetrosPlatformPlatformCategoryOtro() {
-        validarStatusOk.consultarFreetoGame();
-    }
-
-    @Then("el código de error debe ser <statusCode>")
-    public void elCódigoDeErrorDebeSerStatusCode() {
-        validarStatusOk.validarStatus404();
-    }
 }

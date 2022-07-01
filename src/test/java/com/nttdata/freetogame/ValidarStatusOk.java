@@ -46,10 +46,4 @@ public class ValidarStatusOk {
 //
 //    }
 
-    @Test
-    public void validarStatus404 (){
-        int statusCode = response.getStatusCode();
-        Assert.assertEquals(statusCode,404);
-        System.out.println("Status Code : "+ response.getStatusCode());
-    }
 }

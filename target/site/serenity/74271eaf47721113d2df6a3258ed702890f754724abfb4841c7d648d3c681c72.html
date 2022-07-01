@@ -148,7 +148,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Validar Status en Free To Game","type":"feature","href":"74271eaf47721113d2df6a3258ed702890f754724abfb4841c7d648d3c681c72.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027fa fa-check-circle-o success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}];
+            var requirementsTree = [{"text":"Validar Status en Free To Game","type":"feature","href":"74271eaf47721113d2df6a3258ed702890f754724abfb4841c7d648d3c681c72.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027fa fa-times-circle failure-icon \u0027 title\u003d\u0027FAILURE\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -217,7 +217,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 30-06-2022 19:42</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 30-06-2022 22:39</span>
     <br style="clear:left"/>
 </div>
 
@@ -299,7 +299,7 @@
                                                                                             <a style="margin-left:0.5em;padding-right: 1.5em;"
                                                                                                href="bde368de46fcedc9c3746c6cb338090675bfeda7bd6c55e49441494e335d7ca5.html"
                                                                                                title="View test results">
-                                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                                                                                <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
                                                                                                 </a>
 
 
@@ -315,17 +315,38 @@
                                                                                 </table>
                                                                             </td>
                                                                         </tr>
+                                                                        <tr>
+                                                                            <td style="width:95%;" class="toc-title">
+                                                                                <span class="orphan-scenario-toc-entry">
+                                                                                    <a href="#96c5ce8e5d4f8132e1a729fd3ec593760d79f3d2bc095f6d3152b0655f4ab63f" title="View scenario details">
+                                                                                        <i class="far fa-comment-dots"></i> Scenario: Validar Status 404
+                                                                                    </a>
+                                                                                </span>
+                                                                            </td>
+                                                                            <td style="width:5%;">
+                                                                                <table>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                                
+                                                                                                
+
+
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
                                                         </table>
                                                     </div>
                                                     <!--- END OF TOC --->
 
                                                     <h3>Scenarios</h3>
 
-                                                        <a name="2bdd3b7b-f4f8-4141-9d6e-f6e9da1643e0" ></a>
+                                                        <a name="f2402624-bfb7-4b06-90c6-b7e83c2f9412" ></a>
 
 
                                                             <div class="scenario-docs card" id="c8102753f29087f6287e520de10afa7d793e489cd66720bfe487d9293eeb2bd8">
-                                                                <div class="scenario-docs card-header success"
+                                                                <div class="scenario-docs card-header failure"
                                                                      style="min-height:1.5em;">
                                                                     <div>
                                                             <span class="scenario-heading">
@@ -335,16 +356,40 @@
                                                                         <span class="scenario-result-icon">
                                                                 
 
-                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                                                                <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
                                                             </span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="scenario-docs card-body">
                                                                         <p>Given estoy en la página de FreeToGame</p>
                                                                         <p>When consulto mediante los parámetros platform {platform}, category {category}</p>
-                                                                        <p>And hay juegos que mostrar</p>
                                                                         <p>Then el código de respuesta debe ser {statusCode}</p>
                                                                         <p>And imprimo en pantalla el id y el title de los juegos</p>
+                                                                    <div class="examples">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="scenario-docs card" id="96c5ce8e5d4f8132e1a729fd3ec593760d79f3d2bc095f6d3152b0655f4ab63f">
+                                                                <div class="scenario-docs card-header undefined"
+                                                                     style="min-height:1.5em;">
+                                                                    <div>
+                                                            <span class="scenario-heading">
+                                                                <a href=""
+                                                                   title="View test results">Scenario: Validar Status 404</a>
+                                                            </span>
+                                                                        <span class="scenario-result-icon">
+                                                                
+
+                                                                                <i class="fas fa-pause"
+                                                                                   title="No test has been implemented yet"></i>
+                                                            </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="scenario-docs card-body">
+                                                                        <p>Given estoy en la página de FreeToGame</p>
+                                                                        <p>When consulto mediante los parámetros platform {platform}, category {otro}</p>
+                                                                        <p>Then el código de error debe ser {statusCode}</p>
                                                                     <div class="examples">
                                                                     </div>
                                                                 </div>
@@ -364,10 +409,10 @@
                                                 </div>
                                                 <script>
 
-                                                    var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+                                                    var labels = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '100%', ' ', ' ', ' ', ' ', ' '];
                                                     // Our series array that contains series objects or in this case series data arrays
 
-                                                    var series = [{meta: 'Passing tests (automated)', value: 1}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+                                                    var series = [{meta: 'Passing tests (automated)', value: 0}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 1}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
 
                                                     // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
                                                     // as you saw in the previous example
@@ -406,12 +451,11 @@
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                                <td class="aggregate-result-count">
-                                                                    <a href="170bdc285421847f8801c0e9426667685d232207d11fb23bb6b696f70dffabcc.html"><i
-                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
+                                                                <td class="aggregate-result-count"><i
+                                                                            class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing
                                                                 </td>
-                                                            <td class="automated-stats">1</td>
-                                                            <td class="automated-stats">100%</td>
+                                                            <td class="automated-stats">0</td>
+                                                            <td class="automated-stats"> </td>
                                                         </tr>
                                                         <tr>
                                                                 <td class="aggregate-result-count"><i
@@ -435,19 +479,19 @@
                                                             <td class="automated-stats"> </td>
                                                         </tr>
                                                         <tr>
-                                                                    <td colspan="3"><i
-                                                                                class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
+                                                                    <td colspan="3"><a href="99243597913e9f7a7bee180d67cbdadbb01c692080e8f41bdb69906cfd49eb03.html"><i
+                                                                                    class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
                                                                     </td>
 
                                                         </tr>
 
                                                         <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
-                                                                    <i
-                                                                            class='fa fa-times-circle failure-icon'></i>&nbsp;Failed
+                                                                    <a href="77e9cbca710a69c59e9db786f63a26988717270ec6fb6c6550c1dbfb91c39d6a.html"><i
+                                                                                class='fa fa-times-circle failure-icon'></i>&nbsp;Failed</a>
                                                                 </td>
-                                                            <td class="automated-stats">0</td>
-                                                            <td class="automated-stats"> </td>
+                                                            <td class="automated-stats">1</td>
+                                                            <td class="automated-stats">100%</td>
                                                         <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
                                                                     <i
@@ -487,11 +531,11 @@
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                            <td>208ms</td>
+                                                            <td>2s</td>
                                                             <td>0ms</td>
-                                                            <td>208ms</td>
-                                                            <td>208ms</td>
-                                                            <td>208ms</td>
+                                                            <td>2s</td>
+                                                            <td>2s</td>
+                                                            <td>2s</td>
                                                         </tr>
                                                         </tbody>
                                                     </table>
@@ -515,16 +559,28 @@
                                                             </tr>
                                                             </thead>
                                                             <tbody>
-                                                                <tr class="scenario-result SUCCESS">
+                                                                <tr class="scenario-result FAILURE">
                                                                     <td>
                                                                             <a href="bde368de46fcedc9c3746c6cb338090675bfeda7bd6c55e49441494e335d7ca5.html">Validar Status 200</a>
                                                                     </td>
-                                                                    <td>5</td>
-                                                                    <td>19:42:28</td>
-                                                                    <td>208ms</td>
+                                                                    <td>4</td>
+                                                                    <td>22:39:06</td>
+                                                                    <td>2s 923ms</td>
                                                                     <td>
-                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
-                                                                                style="display:none">SUCCESS</span>
+                                                                            <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a> <span
+                                                                                style="display:none">FAILURE</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="scenario-result UNDEFINED">
+                                                                    <td>
+                                                                            Validar Status 404
+                                                                    </td>
+                                                                    <td>3</td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td>
+                                                                            <i class="fas fa-pause"
+                                                                               title="No test has been implemented yet"></i>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
