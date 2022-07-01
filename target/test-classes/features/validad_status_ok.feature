@@ -10,8 +10,8 @@ Feature: Validar Status en Free To Game
     Then el código de respuesta debe ser <statusCode>
     And imprimo en pantalla el id y el title de los juegos
 
-#
-#  Scenario: Validar Status 400
-#    When consulto platform "pc", category "ss"
-#    Then el código de respuesta es 400
-#    And imprimo el mensaje ""
+  @test2
+  Scenario: Validar Status 404
+    Given estoy en la página de FreeToGame
+    When consulto mediante los parámetros platform <platform>, category <otro>
+    Then el código de error debe ser <statusCode>

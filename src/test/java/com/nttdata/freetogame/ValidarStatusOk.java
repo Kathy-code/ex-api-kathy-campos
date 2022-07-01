@@ -20,21 +20,20 @@ public class ValidarStatusOk {
            System.out.println("Estoy consultando mediante parámetros PLATFORM y CATEGORY");
         }
         else{
-            System.out.println("ERROR 400: Los parámetros de la consulta deberían ser PLATFORM y CATEGORY");
+            System.out.println("ERROR 404: Los parámetros de la consulta deberían ser PLATFORM y CATEGORY");
         }
     }
+
     @Test
     public void validarStatusOk(){
-//        System.out.println("Response : "+ response.asString());
         System.out.println("Status Code : "+ response.getStatusCode());
-//        System.out.println("Body : "+ response.getBody().asString());
-        System.out.println("Body parcial: "+ response.getBody().asPrettyString().substring(0));
-
-        //        System.out.println("Time taken : "+ response.getTime());
-//        System.out.println("Header : "+ response.getHeader("content-type"));
-
         int statusCode = response.getStatusCode();
         Assert.assertEquals(statusCode,200);
+    }
+
+    @Test
+    public void imprimoBody(){
+        System.out.println("Body ordenado: "+ response.getBody().asPrettyString());
     }
 
 //    @Test
@@ -48,12 +47,9 @@ public class ValidarStatusOk {
 //    }
 
     @Test
-    public void validarStatus400 (){
-
-        given().
-                get("https://www.freetogame.com/api/games?platform=pc&category=shooter").
-                then().
-                statusCode(400);
-
+    public void validarStatus404 (){
+        int statusCode = response.getStatusCode();
+        Assert.assertEquals(statusCode,404);
+        System.out.println("Status Code : "+ response.getStatusCode());
     }
 }

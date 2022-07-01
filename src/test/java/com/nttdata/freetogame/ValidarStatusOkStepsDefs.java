@@ -24,13 +24,26 @@ public class ValidarStatusOkStepsDefs {
     public void consulto_mediante_los_parámetros_platform_platform_category_category() {
         validarStatusOk.consultarFreetoGame();
     }
+
     @Then("el código de respuesta debe ser <statusCode>")
-    public void el_código_de_respuesta_debe_ser_status_code() {
+    public void elCódigoDeRespuestaDebeSerStatusCode() {
         validarStatusOk.validarStatusOk();
     }
 
     @And("imprimo en pantalla el id y el title de los juegos")
     public void imprimoEnPantallaElIdYElTitleDeLosJuegos() {
         System.out.println("se imprime en pantalla el id y titulos de los juegos obtenidos");
+        validarStatusOk.imprimoBody();
+
+    }
+
+    @When("consulto mediante los parámetros platform <platform>, category <otro>")
+    public void consultoMedianteLosParámetrosPlatformPlatformCategoryOtro() {
+        validarStatusOk.consultarFreetoGame();
+    }
+
+    @Then("el código de error debe ser <statusCode>")
+    public void elCódigoDeErrorDebeSerStatusCode() {
+        validarStatusOk.validarStatus404();
     }
 }
